@@ -26,7 +26,7 @@ Caso não tenha instalado utilize o comando npx cypress install --force e depois
 
 npx cypress open
 
-6. Com o cypress aberto só basta rodar a automação escolhendo o navegador que deseja.
+6. Com o cypress aberto só basta rodar a automação escolhendo o navegador que deseja.....
  
 
 Obs o cypress utiliza o navegador que estiver instalado na máquina, caso não possua nenhum sugiro a instalação no chrome.# agibank
