@@ -4,7 +4,7 @@
 
 Configuração para rodar a automação.
 
-1. Instale o Node.js
+1. Instale o Node.js:
 
 https://nodejs.org/pt-br/download/
 
@@ -30,4 +30,3 @@ npx cypress open
  
 
 Obs o cypress utiliza o navegador que estiver instalado na máquina, caso não possua nenhum sugiro a instalação no chrome.# agibank
-
