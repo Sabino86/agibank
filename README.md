@@ -22,7 +22,7 @@ npx cypress verify
 
 Caso não tenha instalado utilize o comando npx cypress install --force e depois de finalizar verifique novamente a instalação do Cypress utilizando o comando anterior.
 
-5. Confirmado a instalação do cypress, vá até a pasta do projeto via terminal e envie o comando abaixo
+5. Confirmado a instalação do cypress, vá até a pasta do projeto via terminal e envie o comando abaixo:
 
 npx cypress open
 
