@@ -20,7 +20,7 @@ jobs:
           secure: true
           username: ${{ secrets.EMAIL_USER }}
           password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: '[SUCESSO] Merge da Pull Request #'${{ github.event.pull_request.number }}'
+          subject: '[SUCESSO] Merge da Pull Request #${{ github.event.pull_request.number }}'
           body: |
             Olá,
 
