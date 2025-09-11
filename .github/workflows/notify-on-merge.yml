@@ -1,12 +1,11 @@
+---
 name: Enviar E-mail após Merge
-
 on:
   pull_request:
     types:
       - closed
     branches:
-      - main # Mude para a sua branch principal (ex: master, develop)
-
+      - main
 jobs:
   send-email:
     if: github.event.pull_request.merged == true
@@ -20,19 +19,27 @@ jobs:
           secure: true
           username: ${{ secrets.EMAIL_USER }}
           password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: '[SUCESSO] Merge da Pull Request #${{ github.event.pull_request.number }}'
-          body: |
+          subject: "[SUCESSO] Merge da Pull Request #${{ github.event.pull_request.number
+            }}"
+          body: >
             Olá,
+
 
             O merge da pull request #**${{ github.event.pull_request.number }}** foi concluído com sucesso.
 
+
             **Título:** ${{ github.event.pull_request.title }}
+
             **Autor:** ${{ github.event.pull_request.user.login }}
+
             **URL:** ${{ github.event.pull_request.html_url }}
+
 
             Este é um e-mail automático, por favor, não responda. Estou realizando um teste.
 
+
             Atenciosamente,
+
             A equipe de desenvolvimento.
           to: ${{ secrets.EMAIL_USER }}
           from: ${{ secrets.EMAIL_USER }}
